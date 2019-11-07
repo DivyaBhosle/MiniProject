@@ -9,7 +9,7 @@
 <body>
 
 <a href="insert.jsp">Add CM</a><br><br>
-<a href="delete.jsp">Delete CM</a>
+<a href="delete.jsp">Delete CM</a><br><br>
 <a href="show.jsp">Show all CM</a>
 
 </body>
