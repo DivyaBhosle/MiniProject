@@ -7,15 +7,15 @@
     <title>Jsp Sample</title>
     <%@page import="java.sql.*"%>
 </head>
-<body bgcolor=yellow>
+<body>
     <%
     try
     {
         Class.forName("oracle.jdbc.driver.OracleDriver");
-        Connection con=(Connection)DriverManager.getConnection(
+        Connection con=DriverManager.getConnection(
             "jdbc:oracle:thin:@192.168.100.144:1521:xe","hr","hr");
         Statement st=con.createStatement();
-        ResultSet rs=st.executeQuery("select * from chiefminister;");
+        ResultSet rs=st.executeQuery("select * from chiefminister");
     %><table border=1 align=center style="text-align:center">
       <thead>
           <tr>
